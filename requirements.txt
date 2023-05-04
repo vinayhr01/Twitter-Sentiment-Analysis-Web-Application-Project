@@ -1,0 +1,10 @@
+django==4.1.4
+nltk==3.8.1
+numpy==1.24.3
+vaderSentiment==3.3.2
+tweepy==3.9.0
+pandas==2.0.1
+snscrape==0.6.2.20230320
+matplotlib==3.7.1
+wordcloud==1.9.1.1
+scikit-learn==1.2.2
