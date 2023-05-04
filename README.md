@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## sentiment_analysis_final_year_project
 After forking this repository,
 Execute below command for packages
