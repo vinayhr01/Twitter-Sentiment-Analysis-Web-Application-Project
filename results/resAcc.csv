@@ -1,0 +1,4 @@
+Parameter,Value
+Naive Bayes,90.176
+Logistic Regression,84.963
+SVM,91.845
