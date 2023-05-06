@@ -8,3 +8,5 @@ Then, run python in a new terminal, and execute the below commands
 Similarly, execute below commands,
 ## import nltk
 ## nltk.download('averaged_perceptron_tagger')
+Run the project as
+## python manage.py runserver
