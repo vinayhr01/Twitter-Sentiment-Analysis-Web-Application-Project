@@ -94,16 +94,6 @@ def sentiment_analysis_import(request):
                     plt.tight_layout(pad = 0)
                     cloudfile = wordcloud.to_file("sentiment/static/home/images/cloud1.png")
                     
-                    dataset = pd.read_csv('final.csv', encoding_errors='ignore')
-                    dataset = dataset.dropna()
-                    dataset = dataset.reset_index(drop=True)
-
-                    X=dataset['Cleaned Tweet Text']
-                    Y=dataset['Result']
-
-                    X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=0.2,random_state=42)
-                    
-                    
                     data = pd.read_csv("finalD.csv", encoding_errors='ignore', low_memory=False)
                     data = data.dropna()
                     data = data.reset_index(drop=True)
@@ -149,11 +139,11 @@ def sentiment_analysis_import(request):
 
                     
                     tfidf_vectorizer = TfidfVectorizer()
-                    tfidf_xtrain = tfidf_vectorizer.fit_transform(X_train) 
-                    tfidf_xtest = tfidf_vectorizer.transform(X_test)
+                    tfidf_xtrain = tfidf_vectorizer.fit_transform(XX_train) 
+                    tfidf_xtest = tfidf_vectorizer.transform(XX_test)
                     
                     SVCmodel = LinearSVC()
-                    SVCmodel.fit(tfidf_xtrain, Y_train)
+                    SVCmodel.fit(tfidf_xtrain, YY_train)
                     y_predSVC = SVCmodel.predict(tfidf_xtest)
                     
 
