@@ -10,6 +10,8 @@ Sentiment analysis, also referred to as opinion mining, is an approach to natura
 
 We have a trained three different machine learning models Naive Bayes, Support Vector Machine (SVM) and Logistic Regression on finalD.csv file and accuracies are compared.
 
+For the frontend of this application Django python framework has been used.
+
 The project provided SVM with highest accuracy and it has been used to classify new tweets fetched in real-time from twitter based on economic crisis.
 
 The VADER library is a popular 3rd party Social media Sentiment Analyzer which is also used in this project for prediction on same new tweets fetched real-time.
